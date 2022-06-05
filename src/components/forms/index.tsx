@@ -34,16 +34,7 @@ export function Forms(): ReactElement {
 
     await postOcurrence(form).catch(err => console.error(err));
     window.alert('Sucesso! Ocorrência cadastrada.');
-    setForm({
-      userName: '',
-      type: OcurrenceTypesEnum.NONE,
-      date: new Date(),
-      title: '',
-      description: '',
-      suggestions: '',
-      sector: '',
-      status: '',
-    });
+    window.location.reload();
   }
 
   //#endregion
