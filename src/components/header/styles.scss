@@ -23,12 +23,15 @@
   }
 
   &--counts {
+    display: flex;
+
     &--type {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
 
+      margin-left: 0.5rem;
       background: #17ff7f;
       border-radius: 10px;
 

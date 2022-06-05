@@ -4,4 +4,9 @@
 
   background: url("./assets/images/bg.jpg") no-repeat center;
   background-size: cover;
+
+  &--content {
+    display: flex;
+    justify-content: space-between;
+  }
 }

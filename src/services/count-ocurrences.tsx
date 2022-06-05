@@ -1,18 +1,18 @@
+//#region Imports
+
 import { environment } from '../environments/environment';
 import { CountOcurrencesProxy } from '../models/proxies/count-ocurrences.proxy';
 import { axios } from './api';
 
-const headers = {
-  'Access-Control-Allow-Origin': '*',
-  'Content-Type': 'application/json; charset=utf-8',
-  'X-Powered-By':	'Express',
-};
+//#endregion
+
+//#region Methods
 
 export async function getCountsOcurrences(): Promise<CountOcurrencesProxy[]> {
   try {
     const url = environment.api.countOcurrences.base;
 
-    const result = await axios.get<CountOcurrencesProxy[]>(url, { headers });
+    const result = await axios.get<CountOcurrencesProxy[]>(url);
 
     return result.data
   } catch (error) {
@@ -20,3 +20,5 @@ export async function getCountsOcurrences(): Promise<CountOcurrencesProxy[]> {
     return [];
   }
 }
+
+//#endregion
