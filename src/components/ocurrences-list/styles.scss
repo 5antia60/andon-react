@@ -1,0 +1,41 @@
+.ocurrences-list {
+  height: 81% !important;
+  width: 60%;
+
+  margin: 1rem;
+  background: white;
+
+  h1 {
+    margin: 1rem
+  }
+
+  &--titles {
+    display: flex;
+
+    width: 100%;
+
+    margin: 0 1rem;
+
+    strong {
+      width: 25%;
+    }
+  }
+
+  &--items {
+    &--item {
+      display: flex;
+
+      width: 100%;
+
+      margin: 0.3rem 1rem;
+
+      p {
+        width: 25%;
+      }
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}

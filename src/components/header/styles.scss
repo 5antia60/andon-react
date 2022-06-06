@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5.5rem;
+
+  padding: 0 1rem;
+  background: #1a648e;
+  box-shadow: 3px 1px 3px #727272;
+
+  &--title {
+    display: flex;
+
+    padding: 1rem 0;
+    color: #ffffff;
+
+    img {
+      width: 3rem;
+
+      object-fit: cover;
+    }
+  }
+
+  &--counts {
+    display: flex;
+
+    &--type {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      margin-left: 0.5rem;
+      background: #17ff7f;
+      border-radius: 10px;
+
+      strong {
+        padding: 0.5rem;
+      }
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
